@@ -1,0 +1,36 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>FirstName</th>
+            <th>MiddleName</th>
+            <th>LastName</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Address</th>
+            <th>PhoneNumber</th>
+            <th>Country</th>
+            <th>Email</th>
+            <th>Options</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor ="let dataItem of  personDetailList">
+           <td>{{dataItem.Id}}</td>
+           <td>{{dataItem.FirstName}}</td>
+           <td>{{dataItem.MiddleName}}</td>
+           <td>{{dataItem.LastName}}</td>
+           <td>{{dataItem.Age}}</td>
+           <td>{{dataItem.Gender}}</td>
+           <td>{{dataItem.Address}}</td>
+           <td>{{dataItem.PhoneNumber}}</td>
+           <td>{{dataItem.Country}}</td>
+           <td>{{dataItem.Email}}</td>
+           <td>
+               <button type="button" class="btn btn-light mr-1">Edit</button>
+               <button type="button" class="btn btn-light mr-1">Delete</button>
+           </td>
+        </tr>
+    </tbody>
+
+</table>
